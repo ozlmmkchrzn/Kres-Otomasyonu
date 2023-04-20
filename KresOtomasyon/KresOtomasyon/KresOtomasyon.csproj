@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E51D4055-2A9C-4200-BEFE-4BC98D9C9E86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KresOtomasyon</RootNamespace>
+    <AssemblyName>KresOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Aile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Aile.Designer.cs">
+      <DependentUpon>Frm_Aile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AnaSayfa.Designer.cs">
+      <DependentUpon>Frm_AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BorcKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BorcKayit.Designer.cs">
+      <DependentUpon>Frm_BorcKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EtkinlikListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EtkinlikListele.Designer.cs">
+      <DependentUpon>Frm_EtkinlikListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GelirEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GelirEkle.Designer.cs">
+      <DependentUpon>Frm_GelirEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GelirListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GelirListele.Designer.cs">
+      <DependentUpon>Frm_GelirListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GiderEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GiderEkle.Designer.cs">
+      <DependentUpon>Frm_GiderEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GiderListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GiderListele.Designer.cs">
+      <DependentUpon>Frm_GiderListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Giris.Designer.cs">
+      <DependentUpon>Frm_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_KullaniciEkle.Designer.cs">
+      <DependentUpon>Frm_KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Listele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Listele.Designer.cs">
+      <DependentUpon>Frm_Listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OdemeAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OdemeAl.Designer.cs">
+      <DependentUpon>Frm_OdemeAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OgrKartAile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OgrKartAile.Designer.cs">
+      <DependentUpon>Frm_OgrKartAile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OgrKartBorc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OgrKartBorc.Designer.cs">
+      <DependentUpon>Frm_OgrKartBorc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OgrKartDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OgrKartDetay.Designer.cs">
+      <DependentUpon>Frm_OgrKartDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OgrKartSaglik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OgrKartSaglik.Designer.cs">
+      <DependentUpon>Frm_OgrKartSaglik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OgrKartTemel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OgrKartTemel.Designer.cs">
+      <DependentUpon>Frm_OgrKartTemel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OgrSaglik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OgrSaglik.Designer.cs">
+      <DependentUpon>Frm_OgrSaglik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Personel.Designer.cs">
+      <DependentUpon>Frm_Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_PersonelKart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PersonelKart.Designer.cs">
+      <DependentUpon>Frm_PersonelKart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_PersonelListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PersonelListele.Designer.cs">
+      <DependentUpon>Frm_PersonelListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ServisGuzergahEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ServisGuzergahEkle.Designer.cs">
+      <DependentUpon>Frm_ServisGuzergahEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SinifEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SinifEkle.Designer.cs">
+      <DependentUpon>Frm_SinifEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SinifListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SinifListele.Designer.cs">
+      <DependentUpon>Frm_SinifListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_YeniEtkinlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_YeniEtkinlik.Designer.cs">
+      <DependentUpon>Frm_YeniEtkinlik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_YeniOgrDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_YeniOgrDetay.Designer.cs">
+      <DependentUpon>Frm_YeniOgrDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_YeniOgrTemel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_YeniOgrTemel.Designer.cs">
+      <DependentUpon>Frm_YeniOgrTemel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KresOtomasyonDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KresOtomasyonDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Aile.resx">
+      <DependentUpon>Frm_Aile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AnaSayfa.resx">
+      <DependentUpon>Frm_AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BorcKayit.resx">
+      <DependentUpon>Frm_BorcKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EtkinlikListele.resx">
+      <DependentUpon>Frm_EtkinlikListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GelirEkle.resx">
+      <DependentUpon>Frm_GelirEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GelirListele.resx">
+      <DependentUpon>Frm_GelirListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GiderEkle.resx">
+      <DependentUpon>Frm_GiderEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GiderListele.resx">
+      <DependentUpon>Frm_GiderListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Giris.resx">
+      <DependentUpon>Frm_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_KullaniciEkle.resx">
+      <DependentUpon>Frm_KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Listele.resx">
+      <DependentUpon>Frm_Listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OdemeAl.resx">
+      <DependentUpon>Frm_OdemeAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OgrKartAile.resx">
+      <DependentUpon>Frm_OgrKartAile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OgrKartBorc.resx">
+      <DependentUpon>Frm_OgrKartBorc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OgrKartDetay.resx">
+      <DependentUpon>Frm_OgrKartDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OgrKartSaglik.resx">
+      <DependentUpon>Frm_OgrKartSaglik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OgrKartTemel.resx">
+      <DependentUpon>Frm_OgrKartTemel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OgrSaglik.resx">
+      <DependentUpon>Frm_OgrSaglik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Personel.resx">
+      <DependentUpon>Frm_Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PersonelKart.resx">
+      <DependentUpon>Frm_PersonelKart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PersonelListele.resx">
+      <DependentUpon>Frm_PersonelListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ServisGuzergahEkle.resx">
+      <DependentUpon>Frm_ServisGuzergahEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SinifEkle.resx">
+      <DependentUpon>Frm_SinifEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SinifListele.resx">
+      <DependentUpon>Frm_SinifListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_YeniEtkinlik.resx">
+      <DependentUpon>Frm_YeniEtkinlik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_YeniOgrDetay.resx">
+      <DependentUpon>Frm_YeniOgrDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_YeniOgrTemel.resx">
+      <DependentUpon>Frm_YeniOgrTemel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="KresOtomasyonDataSet.xsc">
+      <DependentUpon>KresOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet.xss">
+      <DependentUpon>KresOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet1.xsc">
+      <DependentUpon>KresOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet1.xss">
+      <DependentUpon>KresOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet10.xsc">
+      <DependentUpon>KresOtomasyonDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet10.xss">
+      <DependentUpon>KresOtomasyonDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet11.xsc">
+      <DependentUpon>KresOtomasyonDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet11.xss">
+      <DependentUpon>KresOtomasyonDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet12.xsc">
+      <DependentUpon>KresOtomasyonDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet12.xss">
+      <DependentUpon>KresOtomasyonDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet13.xsc">
+      <DependentUpon>KresOtomasyonDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet13.xss">
+      <DependentUpon>KresOtomasyonDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet14.xsc">
+      <DependentUpon>KresOtomasyonDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet14.xss">
+      <DependentUpon>KresOtomasyonDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet15.xsc">
+      <DependentUpon>KresOtomasyonDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet15.xss">
+      <DependentUpon>KresOtomasyonDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet2.xsc">
+      <DependentUpon>KresOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet2.xss">
+      <DependentUpon>KresOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet3.xsc">
+      <DependentUpon>KresOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet3.xss">
+      <DependentUpon>KresOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet4.xsc">
+      <DependentUpon>KresOtomasyonDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet4.xss">
+      <DependentUpon>KresOtomasyonDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet5.xsc">
+      <DependentUpon>KresOtomasyonDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet5.xss">
+      <DependentUpon>KresOtomasyonDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet6.xsc">
+      <DependentUpon>KresOtomasyonDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet6.xss">
+      <DependentUpon>KresOtomasyonDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet7.xsc">
+      <DependentUpon>KresOtomasyonDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet7.xss">
+      <DependentUpon>KresOtomasyonDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet8.xsc">
+      <DependentUpon>KresOtomasyonDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet8.xss">
+      <DependentUpon>KresOtomasyonDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet9.xsc">
+      <DependentUpon>KresOtomasyonDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="KresOtomasyonDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KresOtomasyonDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KresOtomasyonDataSet9.xss">
+      <DependentUpon>KresOtomasyonDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KresOtomasyonDataSet1" targetNamespace="http://tempuri.org/KresOtomasyonDataSet1.xsd" xmlns:mstns="http://tempuri.org/KresOtomasyonDataSet1.xsd" xmlns="http://tempuri.org/KresOtomasyonDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="KresOtomasyonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KresOtomasyonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KresOtomasyon.Properties.Settings.GlobalReference.Default.KresOtomasyonConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tbl_PersonelTableAdapter" GeneratorDataComponentClassName="Tbl_PersonelTableAdapter" Name="Tbl_Personel" UserDataComponentName="Tbl_PersonelTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KresOtomasyonConnectionString (Settings)" DbObjectName="KresOtomasyon.dbo.Tbl_Personel" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Tbl_Personel] WHERE (([PersonelID] = @Original_PersonelID) AND ((@IsNull_PersonelAd = 1 AND [PersonelAd] IS NULL) OR ([PersonelAd] = @Original_PersonelAd)) AND ((@IsNull_PersonelUnvan = 1 AND [PersonelUnvan] IS NULL) OR ([PersonelUnvan] = @Original_PersonelUnvan)) AND ((@IsNull_PersonelBaslamaTarih = 1 AND [PersonelBaslamaTarih] IS NULL) OR ([PersonelBaslamaTarih] = @Original_PersonelBaslamaTarih)) AND ((@IsNull_PersonelAyrilmaTarih = 1 AND [PersonelAyrilmaTarih] IS NULL) OR ([PersonelAyrilmaTarih] = @Original_PersonelAyrilmaTarih)) AND ((@IsNull_PersonelMaas = 1 AND [PersonelMaas] IS NULL) OR ([PersonelMaas] = @Original_PersonelMaas)) AND ((@IsNull_PersonelDurum = 1 AND [PersonelDurum] IS NULL) OR ([PersonelDurum] = @Original_PersonelDurum)) AND ((@IsNull_PersonelTahsil = 1 AND [PersonelTahsil] IS NULL) OR ([PersonelTahsil] = @Original_PersonelTahsil)) AND ((@IsNull_PersonelCalisSekli = 1 AND [PersonelCalisSekli] IS NULL) OR ([PersonelCalisSekli] = @Original_PersonelCalisSekli)) AND ((@IsNull_PersonelMukaveleBasTarih = 1 AND [PersonelMukaveleBasTarih] IS NULL) OR ([PersonelMukaveleBasTarih] = @Original_PersonelMukaveleBasTarih)) AND ((@IsNull_PersonelMukaveleBitisTarih = 1 AND [PersonelMukaveleBitisTarih] IS NULL) OR ([PersonelMukaveleBitisTarih] = @Original_PersonelMukaveleBitisTarih)) AND ((@IsNull_PersonelMesaiSaat = 1 AND [PersonelMesaiSaat] IS NULL) OR ([PersonelMesaiSaat] = @Original_PersonelMesaiSaat)) AND ((@IsNull_PersonelOgretmen = 1 AND [PersonelOgretmen] IS NULL) OR ([PersonelOgretmen] = @Original_PersonelOgretmen)) AND ((@IsNull_PersonelEvTel = 1 AND [PersonelEvTel] IS NULL) OR ([PersonelEvTel] = @Original_PersonelEvTel)) AND ((@IsNull_PersonelCepTel = 1 AND [PersonelCepTel] IS NULL) OR ([PersonelCepTel] = @Original_PersonelCepTel)) AND ((@IsNull_PersonelMail = 1 AND [PersonelMail] IS NULL) OR ([PersonelMail] = @Original_PersonelMail)) AND ((@IsNull_PersonelAdres = 1 AND [PersonelAdres] IS NULL) OR ([PersonelAdres] = @Original_PersonelAdres)) AND ((@IsNull_PersonelTC = 1 AND [PersonelTC] IS NULL) OR ([PersonelTC] = @Original_PersonelTC)) AND ((@IsNull_PersonelDogTarih = 1 AND [PersonelDogTarih] IS NULL) OR ([PersonelDogTarih] = @Original_PersonelDogTarih)) AND ((@IsNull_PersonelSeriNo = 1 AND [PersonelSeriNo] IS NULL) OR ([PersonelSeriNo] = @Original_PersonelSeriNo)) AND ((@IsNull_PersonelUyruk = 1 AND [PersonelUyruk] IS NULL) OR ([PersonelUyruk] = @Original_PersonelUyruk)) AND ((@IsNull_PersonelSonKullanTarih = 1 AND [PersonelSonKullanTarih] IS NULL) OR ([PersonelSonKullanTarih] = @Original_PersonelSonKullanTarih)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_PersonelID" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="PersonelID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelAd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelAd" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelUnvan" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelUnvan" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelUnvan" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUnvan" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelBaslamaTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelBaslamaTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelBaslamaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelBaslamaTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelAyrilmaTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelAyrilmaTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelAyrilmaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAyrilmaTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMaas" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMaas" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMaas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMaas" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelDurum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelDurum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDurum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelTahsil" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelTahsil" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelTahsil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTahsil" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelCalisSekli" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelCalisSekli" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelCalisSekli" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCalisSekli" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMukaveleBasTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMukaveleBasTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMukaveleBasTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBasTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMukaveleBitisTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMukaveleBitisTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMukaveleBitisTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBitisTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMesaiSaat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMesaiSaat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMesaiSaat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMesaiSaat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelOgretmen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelOgretmen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelOgretmen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelOgretmen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelEvTel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelEvTel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelEvTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelEvTel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelCepTel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelCepTel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelCepTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCepTel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelAdres" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelAdres" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelAdres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAdres" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelTC" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelTC" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelTC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelDogTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelDogTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelDogTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDogTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelSeriNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelSeriNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelSeriNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSeriNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelUyruk" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelUyruk" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelUyruk" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUyruk" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelSonKullanTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelSonKullanTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelSonKullanTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSonKullanTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Tbl_Personel] ([PersonelAd], [PersonelUnvan], [PersonelBaslamaTarih], [PersonelAyrilmaTarih], [PersonelMaas], [PersonelDurum], [PersonelTahsil], [PersonelCalisSekli], [PersonelMukaveleBasTarih], [PersonelMukaveleBitisTarih], [PersonelMesaiSaat], [PersonelOgretmen], [PersonelEvTel], [PersonelCepTel], [PersonelMail], [PersonelAdres], [PersonelTC], [PersonelDogTarih], [PersonelSeriNo], [PersonelUyruk], [PersonelSonKullanTarih]) VALUES (@PersonelAd, @PersonelUnvan, @PersonelBaslamaTarih, @PersonelAyrilmaTarih, @PersonelMaas, @PersonelDurum, @PersonelTahsil, @PersonelCalisSekli, @PersonelMukaveleBasTarih, @PersonelMukaveleBitisTarih, @PersonelMesaiSaat, @PersonelOgretmen, @PersonelEvTel, @PersonelCepTel, @PersonelMail, @PersonelAdres, @PersonelTC, @PersonelDogTarih, @PersonelSeriNo, @PersonelUyruk, @PersonelSonKullanTarih);
+SELECT PersonelID, PersonelAd, PersonelUnvan, PersonelBaslamaTarih, PersonelAyrilmaTarih, PersonelMaas, PersonelDurum, PersonelTahsil, PersonelCalisSekli, PersonelMukaveleBasTarih, PersonelMukaveleBitisTarih, PersonelMesaiSaat, PersonelOgretmen, PersonelEvTel, PersonelCepTel, PersonelMail, PersonelAdres, PersonelTC, PersonelDogTarih, PersonelSeriNo, PersonelUyruk, PersonelSonKullanTarih FROM Tbl_Personel WHERE (PersonelID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelUnvan" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUnvan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelBaslamaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelBaslamaTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelAyrilmaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAyrilmaTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMaas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMaas" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDurum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelTahsil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTahsil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelCalisSekli" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCalisSekli" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMukaveleBasTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBasTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMukaveleBitisTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBitisTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMesaiSaat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMesaiSaat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelOgretmen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelOgretmen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelEvTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelEvTel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelCepTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCepTel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelAdres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAdres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelTC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelDogTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDogTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelSeriNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSeriNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelUyruk" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUyruk" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelSonKullanTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSonKullanTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PersonelID, PersonelAd, PersonelUnvan, PersonelBaslamaTarih, PersonelAyrilmaTarih, PersonelMaas, PersonelDurum, PersonelTahsil, PersonelCalisSekli, PersonelMukaveleBasTarih, PersonelMukaveleBitisTarih, PersonelMesaiSaat, PersonelOgretmen, PersonelEvTel, PersonelCepTel, PersonelMail, PersonelAdres, PersonelTC, PersonelDogTarih, PersonelSeriNo, PersonelUyruk, PersonelSonKullanTarih FROM dbo.Tbl_Personel</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Tbl_Personel] SET [PersonelAd] = @PersonelAd, [PersonelUnvan] = @PersonelUnvan, [PersonelBaslamaTarih] = @PersonelBaslamaTarih, [PersonelAyrilmaTarih] = @PersonelAyrilmaTarih, [PersonelMaas] = @PersonelMaas, [PersonelDurum] = @PersonelDurum, [PersonelTahsil] = @PersonelTahsil, [PersonelCalisSekli] = @PersonelCalisSekli, [PersonelMukaveleBasTarih] = @PersonelMukaveleBasTarih, [PersonelMukaveleBitisTarih] = @PersonelMukaveleBitisTarih, [PersonelMesaiSaat] = @PersonelMesaiSaat, [PersonelOgretmen] = @PersonelOgretmen, [PersonelEvTel] = @PersonelEvTel, [PersonelCepTel] = @PersonelCepTel, [PersonelMail] = @PersonelMail, [PersonelAdres] = @PersonelAdres, [PersonelTC] = @PersonelTC, [PersonelDogTarih] = @PersonelDogTarih, [PersonelSeriNo] = @PersonelSeriNo, [PersonelUyruk] = @PersonelUyruk, [PersonelSonKullanTarih] = @PersonelSonKullanTarih WHERE (([PersonelID] = @Original_PersonelID) AND ((@IsNull_PersonelAd = 1 AND [PersonelAd] IS NULL) OR ([PersonelAd] = @Original_PersonelAd)) AND ((@IsNull_PersonelUnvan = 1 AND [PersonelUnvan] IS NULL) OR ([PersonelUnvan] = @Original_PersonelUnvan)) AND ((@IsNull_PersonelBaslamaTarih = 1 AND [PersonelBaslamaTarih] IS NULL) OR ([PersonelBaslamaTarih] = @Original_PersonelBaslamaTarih)) AND ((@IsNull_PersonelAyrilmaTarih = 1 AND [PersonelAyrilmaTarih] IS NULL) OR ([PersonelAyrilmaTarih] = @Original_PersonelAyrilmaTarih)) AND ((@IsNull_PersonelMaas = 1 AND [PersonelMaas] IS NULL) OR ([PersonelMaas] = @Original_PersonelMaas)) AND ((@IsNull_PersonelDurum = 1 AND [PersonelDurum] IS NULL) OR ([PersonelDurum] = @Original_PersonelDurum)) AND ((@IsNull_PersonelTahsil = 1 AND [PersonelTahsil] IS NULL) OR ([PersonelTahsil] = @Original_PersonelTahsil)) AND ((@IsNull_PersonelCalisSekli = 1 AND [PersonelCalisSekli] IS NULL) OR ([PersonelCalisSekli] = @Original_PersonelCalisSekli)) AND ((@IsNull_PersonelMukaveleBasTarih = 1 AND [PersonelMukaveleBasTarih] IS NULL) OR ([PersonelMukaveleBasTarih] = @Original_PersonelMukaveleBasTarih)) AND ((@IsNull_PersonelMukaveleBitisTarih = 1 AND [PersonelMukaveleBitisTarih] IS NULL) OR ([PersonelMukaveleBitisTarih] = @Original_PersonelMukaveleBitisTarih)) AND ((@IsNull_PersonelMesaiSaat = 1 AND [PersonelMesaiSaat] IS NULL) OR ([PersonelMesaiSaat] = @Original_PersonelMesaiSaat)) AND ((@IsNull_PersonelOgretmen = 1 AND [PersonelOgretmen] IS NULL) OR ([PersonelOgretmen] = @Original_PersonelOgretmen)) AND ((@IsNull_PersonelEvTel = 1 AND [PersonelEvTel] IS NULL) OR ([PersonelEvTel] = @Original_PersonelEvTel)) AND ((@IsNull_PersonelCepTel = 1 AND [PersonelCepTel] IS NULL) OR ([PersonelCepTel] = @Original_PersonelCepTel)) AND ((@IsNull_PersonelMail = 1 AND [PersonelMail] IS NULL) OR ([PersonelMail] = @Original_PersonelMail)) AND ((@IsNull_PersonelAdres = 1 AND [PersonelAdres] IS NULL) OR ([PersonelAdres] = @Original_PersonelAdres)) AND ((@IsNull_PersonelTC = 1 AND [PersonelTC] IS NULL) OR ([PersonelTC] = @Original_PersonelTC)) AND ((@IsNull_PersonelDogTarih = 1 AND [PersonelDogTarih] IS NULL) OR ([PersonelDogTarih] = @Original_PersonelDogTarih)) AND ((@IsNull_PersonelSeriNo = 1 AND [PersonelSeriNo] IS NULL) OR ([PersonelSeriNo] = @Original_PersonelSeriNo)) AND ((@IsNull_PersonelUyruk = 1 AND [PersonelUyruk] IS NULL) OR ([PersonelUyruk] = @Original_PersonelUyruk)) AND ((@IsNull_PersonelSonKullanTarih = 1 AND [PersonelSonKullanTarih] IS NULL) OR ([PersonelSonKullanTarih] = @Original_PersonelSonKullanTarih)));
+SELECT PersonelID, PersonelAd, PersonelUnvan, PersonelBaslamaTarih, PersonelAyrilmaTarih, PersonelMaas, PersonelDurum, PersonelTahsil, PersonelCalisSekli, PersonelMukaveleBasTarih, PersonelMukaveleBitisTarih, PersonelMesaiSaat, PersonelOgretmen, PersonelEvTel, PersonelCepTel, PersonelMail, PersonelAdres, PersonelTC, PersonelDogTarih, PersonelSeriNo, PersonelUyruk, PersonelSonKullanTarih FROM Tbl_Personel WHERE (PersonelID = @PersonelID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelUnvan" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUnvan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelBaslamaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelBaslamaTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelAyrilmaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAyrilmaTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMaas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMaas" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDurum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelTahsil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTahsil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelCalisSekli" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCalisSekli" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMukaveleBasTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBasTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMukaveleBitisTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBitisTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMesaiSaat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMesaiSaat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelOgretmen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelOgretmen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelEvTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelEvTel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelCepTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCepTel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelMail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelAdres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAdres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelTC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelDogTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDogTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelSeriNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSeriNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelUyruk" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUyruk" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PersonelSonKullanTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSonKullanTarih" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_PersonelID" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="PersonelID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelAd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelAd" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelUnvan" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelUnvan" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelUnvan" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUnvan" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelBaslamaTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelBaslamaTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelBaslamaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelBaslamaTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelAyrilmaTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelAyrilmaTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelAyrilmaTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAyrilmaTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMaas" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMaas" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMaas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMaas" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelDurum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelDurum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDurum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelTahsil" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelTahsil" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelTahsil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTahsil" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelCalisSekli" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelCalisSekli" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelCalisSekli" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCalisSekli" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMukaveleBasTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMukaveleBasTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMukaveleBasTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBasTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMukaveleBitisTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMukaveleBitisTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMukaveleBitisTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMukaveleBitisTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMesaiSaat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMesaiSaat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMesaiSaat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMesaiSaat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelOgretmen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelOgretmen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelOgretmen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelOgretmen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelEvTel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelEvTel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelEvTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelEvTel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelCepTel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelCepTel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelCepTel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelCepTel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelMail" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelMail" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelMail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelMail" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelAdres" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelAdres" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelAdres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelAdres" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelTC" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelTC" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelTC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelTC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelDogTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelDogTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelDogTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelDogTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelSeriNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelSeriNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelSeriNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSeriNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelUyruk" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelUyruk" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelUyruk" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelUyruk" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PersonelSonKullanTarih" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PersonelSonKullanTarih" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PersonelSonKullanTarih" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PersonelSonKullanTarih" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="PersonelID" ColumnName="PersonelID" DataSourceName="KresOtomasyon.dbo.Tbl_Personel" DataTypeServer="smallint" DbType="Int16" Direction="Input" ParameterName="@PersonelID" Precision="0" ProviderType="SmallInt" Scale="0" Size="2" SourceColumn="PersonelID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PersonelID" DataSetColumn="PersonelID" />
+              <Mapping SourceColumn="PersonelAd" DataSetColumn="PersonelAd" />
+              <Mapping SourceColumn="PersonelUnvan" DataSetColumn="PersonelUnvan" />
+              <Mapping SourceColumn="PersonelBaslamaTarih" DataSetColumn="PersonelBaslamaTarih" />
+              <Mapping SourceColumn="PersonelAyrilmaTarih" DataSetColumn="PersonelAyrilmaTarih" />
+              <Mapping SourceColumn="PersonelMaas" DataSetColumn="PersonelMaas" />
+              <Mapping SourceColumn="PersonelDurum" DataSetColumn="PersonelDurum" />
+              <Mapping SourceColumn="PersonelTahsil" DataSetColumn="PersonelTahsil" />
+              <Mapping SourceColumn="PersonelCalisSekli" DataSetColumn="PersonelCalisSekli" />
+              <Mapping SourceColumn="PersonelMukaveleBasTarih" DataSetColumn="PersonelMukaveleBasTarih" />
+              <Mapping SourceColumn="PersonelMukaveleBitisTarih" DataSetColumn="PersonelMukaveleBitisTarih" />
+              <Mapping SourceColumn="PersonelMesaiSaat" DataSetColumn="PersonelMesaiSaat" />
+              <Mapping SourceColumn="PersonelOgretmen" DataSetColumn="PersonelOgretmen" />
+              <Mapping SourceColumn="PersonelEvTel" DataSetColumn="PersonelEvTel" />
+              <Mapping SourceColumn="PersonelCepTel" DataSetColumn="PersonelCepTel" />
+              <Mapping SourceColumn="PersonelMail" DataSetColumn="PersonelMail" />
+              <Mapping SourceColumn="PersonelAdres" DataSetColumn="PersonelAdres" />
+              <Mapping SourceColumn="PersonelTC" DataSetColumn="PersonelTC" />
+              <Mapping SourceColumn="PersonelDogTarih" DataSetColumn="PersonelDogTarih" />
+              <Mapping SourceColumn="PersonelSeriNo" DataSetColumn="PersonelSeriNo" />
+              <Mapping SourceColumn="PersonelUyruk" DataSetColumn="PersonelUyruk" />
+              <Mapping SourceColumn="PersonelSonKullanTarih" DataSetColumn="PersonelSonKullanTarih" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KresOtomasyonDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="KresOtomasyonDataSet1" msprop:Generator_UserDSName="KresOtomasyonDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tbl_Personel" msprop:Generator_TableClassName="Tbl_PersonelDataTable" msprop:Generator_TableVarName="tableTbl_Personel" msprop:Generator_TablePropName="Tbl_Personel" msprop:Generator_RowDeletingName="Tbl_PersonelRowDeleting" msprop:Generator_RowChangingName="Tbl_PersonelRowChanging" msprop:Generator_RowEvHandlerName="Tbl_PersonelRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_PersonelRowDeleted" msprop:Generator_UserTableName="Tbl_Personel" msprop:Generator_RowChangedName="Tbl_PersonelRowChanged" msprop:Generator_RowEvArgName="Tbl_PersonelRowChangeEvent" msprop:Generator_RowClassName="Tbl_PersonelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonelID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPersonelID" msprop:Generator_ColumnPropNameInRow="PersonelID" msprop:Generator_ColumnPropNameInTable="PersonelIDColumn" msprop:Generator_UserColumnName="PersonelID" type="xs:short" />
+              <xs:element name="PersonelAd" msprop:Generator_ColumnVarNameInTable="columnPersonelAd" msprop:Generator_ColumnPropNameInRow="PersonelAd" msprop:Generator_ColumnPropNameInTable="PersonelAdColumn" msprop:Generator_UserColumnName="PersonelAd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelUnvan" msprop:Generator_ColumnVarNameInTable="columnPersonelUnvan" msprop:Generator_ColumnPropNameInRow="PersonelUnvan" msprop:Generator_ColumnPropNameInTable="PersonelUnvanColumn" msprop:Generator_UserColumnName="PersonelUnvan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelBaslamaTarih" msprop:Generator_ColumnVarNameInTable="columnPersonelBaslamaTarih" msprop:Generator_ColumnPropNameInRow="PersonelBaslamaTarih" msprop:Generator_ColumnPropNameInTable="PersonelBaslamaTarihColumn" msprop:Generator_UserColumnName="PersonelBaslamaTarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelAyrilmaTarih" msprop:Generator_ColumnVarNameInTable="columnPersonelAyrilmaTarih" msprop:Generator_ColumnPropNameInRow="PersonelAyrilmaTarih" msprop:Generator_ColumnPropNameInTable="PersonelAyrilmaTarihColumn" msprop:Generator_UserColumnName="PersonelAyrilmaTarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelMaas" msprop:Generator_ColumnVarNameInTable="columnPersonelMaas" msprop:Generator_ColumnPropNameInRow="PersonelMaas" msprop:Generator_ColumnPropNameInTable="PersonelMaasColumn" msprop:Generator_UserColumnName="PersonelMaas" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelDurum" msprop:Generator_ColumnVarNameInTable="columnPersonelDurum" msprop:Generator_ColumnPropNameInRow="PersonelDurum" msprop:Generator_ColumnPropNameInTable="PersonelDurumColumn" msprop:Generator_UserColumnName="PersonelDurum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelTahsil" msprop:Generator_ColumnVarNameInTable="columnPersonelTahsil" msprop:Generator_ColumnPropNameInRow="PersonelTahsil" msprop:Generator_ColumnPropNameInTable="PersonelTahsilColumn" msprop:Generator_UserColumnName="PersonelTahsil" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelCalisSekli" msprop:Generator_ColumnVarNameInTable="columnPersonelCalisSekli" msprop:Generator_ColumnPropNameInRow="PersonelCalisSekli" msprop:Generator_ColumnPropNameInTable="PersonelCalisSekliColumn" msprop:Generator_UserColumnName="PersonelCalisSekli" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelMukaveleBasTarih" msprop:Generator_ColumnVarNameInTable="columnPersonelMukaveleBasTarih" msprop:Generator_ColumnPropNameInRow="PersonelMukaveleBasTarih" msprop:Generator_ColumnPropNameInTable="PersonelMukaveleBasTarihColumn" msprop:Generator_UserColumnName="PersonelMukaveleBasTarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelMukaveleBitisTarih" msprop:Generator_ColumnVarNameInTable="columnPersonelMukaveleBitisTarih" msprop:Generator_ColumnPropNameInRow="PersonelMukaveleBitisTarih" msprop:Generator_ColumnPropNameInTable="PersonelMukaveleBitisTarihColumn" msprop:Generator_UserColumnName="PersonelMukaveleBitisTarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelMesaiSaat" msprop:Generator_ColumnVarNameInTable="columnPersonelMesaiSaat" msprop:Generator_ColumnPropNameInRow="PersonelMesaiSaat" msprop:Generator_ColumnPropNameInTable="PersonelMesaiSaatColumn" msprop:Generator_UserColumnName="PersonelMesaiSaat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelOgretmen" msprop:Generator_ColumnVarNameInTable="columnPersonelOgretmen" msprop:Generator_ColumnPropNameInRow="PersonelOgretmen" msprop:Generator_ColumnPropNameInTable="PersonelOgretmenColumn" msprop:Generator_UserColumnName="PersonelOgretmen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelEvTel" msprop:Generator_ColumnVarNameInTable="columnPersonelEvTel" msprop:Generator_ColumnPropNameInRow="PersonelEvTel" msprop:Generator_ColumnPropNameInTable="PersonelEvTelColumn" msprop:Generator_UserColumnName="PersonelEvTel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelCepTel" msprop:Generator_ColumnVarNameInTable="columnPersonelCepTel" msprop:Generator_ColumnPropNameInRow="PersonelCepTel" msprop:Generator_ColumnPropNameInTable="PersonelCepTelColumn" msprop:Generator_UserColumnName="PersonelCepTel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelMail" msprop:Generator_ColumnVarNameInTable="columnPersonelMail" msprop:Generator_ColumnPropNameInRow="PersonelMail" msprop:Generator_ColumnPropNameInTable="PersonelMailColumn" msprop:Generator_UserColumnName="PersonelMail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelAdres" msprop:Generator_ColumnVarNameInTable="columnPersonelAdres" msprop:Generator_ColumnPropNameInRow="PersonelAdres" msprop:Generator_ColumnPropNameInTable="PersonelAdresColumn" msprop:Generator_UserColumnName="PersonelAdres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelTC" msprop:Generator_ColumnVarNameInTable="columnPersonelTC" msprop:Generator_ColumnPropNameInRow="PersonelTC" msprop:Generator_ColumnPropNameInTable="PersonelTCColumn" msprop:Generator_UserColumnName="PersonelTC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelDogTarih" msprop:Generator_ColumnVarNameInTable="columnPersonelDogTarih" msprop:Generator_ColumnPropNameInRow="PersonelDogTarih" msprop:Generator_ColumnPropNameInTable="PersonelDogTarihColumn" msprop:Generator_UserColumnName="PersonelDogTarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelSeriNo" msprop:Generator_ColumnVarNameInTable="columnPersonelSeriNo" msprop:Generator_ColumnPropNameInRow="PersonelSeriNo" msprop:Generator_ColumnPropNameInTable="PersonelSeriNoColumn" msprop:Generator_UserColumnName="PersonelSeriNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelUyruk" msprop:Generator_ColumnVarNameInTable="columnPersonelUyruk" msprop:Generator_ColumnPropNameInRow="PersonelUyruk" msprop:Generator_ColumnPropNameInTable="PersonelUyrukColumn" msprop:Generator_UserColumnName="PersonelUyruk" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonelSonKullanTarih" msprop:Generator_ColumnVarNameInTable="columnPersonelSonKullanTarih" msprop:Generator_ColumnPropNameInRow="PersonelSonKullanTarih" msprop:Generator_ColumnPropNameInTable="PersonelSonKullanTarihColumn" msprop:Generator_UserColumnName="PersonelSonKullanTarih" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Tbl_Personel" />
+      <xs:field xpath="mstns:PersonelID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
